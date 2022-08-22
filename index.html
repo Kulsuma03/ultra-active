@@ -36,7 +36,7 @@
                                 <div class="card-body mt-9">
                                   <h2 class=" text-center text-2xl font-medium">Cristiano Ronaldo</h2>
                                   <div class="card-actions mx-auto">
-                                    <button class="btn btn-primary tracking-wide px-12">SELECT</button>
+                                    <button class="btn btn-primary tracking-wide px-12" onclick="addToCart(this)">SELECT</button>
                                   </div>
                                 </div>
                               </div>
@@ -48,7 +48,7 @@
                                 <div class="card-body mt-9">
                                   <h2 class=" text-center text-2xl font-medium">Lionel Messi </h2>
                                   <div class="card-actions mx-auto">
-                                    <button class="btn btn-primary tracking-wide px-12">SELECT</button>
+                                    <button class="btn btn-primary tracking-wide px-12" onclick="addToCart(this)">SELECT</button>
                                   </div>
                                 </div>
                               </div>
@@ -60,7 +60,7 @@
                                 <div class="card-body mt-9">
                                   <h2 class=" text-center text-2xl font-medium">Neymar</h2>
                                   <div class="card-actions mx-auto">
-                                    <button class="btn btn-primary tracking-wide px-12">SELECT</button>
+                                    <button class="btn btn-primary tracking-wide px-12" onclick="addToCart(this)">SELECT</button>
                                   </div>
                                 </div>
                               </div>
@@ -72,7 +72,7 @@
                                 <div class="card-body">
                                   <h2 class=" text-center text-2xl font-medium">Henrikh Mkhitaryan</h2>
                                   <div class="card-actions mx-auto">
-                                    <button class="btn btn-primary tracking-wide px-12">SELECT</button>
+                                    <button class="btn btn-primary tracking-wide px-12" onclick="addToCart(this)">SELECT</button>
                                   </div>
                                 </div>
                               </div>
@@ -84,7 +84,7 @@
                                 <div class="card-body">
                                   <h2 class=" text-center text-2xl font-medium">Pierre-Emerick Aubameyang</h2>
                                   <div class="card-actions mx-auto">
-                                    <button class="btn btn-primary tracking-wide px-12">SELECT</button>
+                                    <button class="btn btn-primary tracking-wide px-12" onclick="addToCart(this)">SELECT</button>
                                   </div>
                                 </div>
                               </div>
@@ -96,7 +96,7 @@
                                 <div class="card-body mt-9">
                                   <h2 class=" text-center text-2xl font-medium">Blerim Džemaili</h2>
                                   <div class="card-actions mx-auto">
-                                    <button class="btn btn-primary tracking-wide px-12">SELECT</button>
+                                    <button class="btn btn-primary tracking-wide px-12" onclick="addToCart(this)">SELECT</button>
                                   </div>
                                 </div>
                               </div>
@@ -109,7 +109,7 @@
                                 <div class="card-body">
                                   <h2 class=" text-center text-3xl font-medium">Kevin Großkreutz</h2>
                                   <div class="card-actions mx-auto">
-                                    <button class="btn btn-primary tracking-wide px-12">SELECT</button>
+                                    <button class="btn btn-primary tracking-wide px-12" onclick="addToCart(this)">SELECT</button>
                                   </div>
                                 </div>
                               </div>
@@ -121,10 +121,12 @@
                 <div class="gap-4">
                     <!-- Selected  -->
                     <div class="border border-indigo-600 h-80 rounded-lg mb-4 ">
-                        <h2 class="text-3xl font-bold text-center">Selected-Players</h2>
-                        <ol id="ol-body">
-
+                      <h2 class="text-3xl font-bold text-center">Selected-Players</h2>
+                        <div class="p-5">
+                        <ol id="ol-body" class="list-decimal">
+                          
                         </ol>
+                        </div>
                     </div>
                         <!-- claculation part -->
                         <!-- Budget  -->
