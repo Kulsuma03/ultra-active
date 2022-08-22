@@ -1,10 +1,12 @@
 
 let cartArray = [];
 
+// players selection 
 
 function addToCart(element){
     const playersName = element.parentNode.parentNode.children[0].innerText;
-  
+
+    element.setAttribute('disabled', true);
     const olBody = document.getElementById('myList');
     
     const ol = document.createElement('ol');
@@ -19,5 +21,9 @@ function addToCart(element){
     cartArray.push(playersName);
    
 }
+
+// caculation budget 
+
+document.getElementById('')
 
 
