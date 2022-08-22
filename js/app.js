@@ -1,11 +1,23 @@
-let cartArray = []
+
+let cartArray = [];
+
+
 function addToCart(element){
     const playersName = element.parentNode.parentNode.children[0].innerText;
-    console.log(playersName)
-    const olBody = document.getElementById('ol-body');
-    const li = document.createElement('li');
-    li.innerHTML=`
-    <li>${playersName}</li>
+  
+    const olBody = document.getElementById('myList');
+    
+    const ol = document.createElement('ol');
+    ol.innerHTML=`
+    <li>${cartArray.length + 1}. ${playersName}</li>
     `;
-    olBody.appendChild(li);
+    if(cartArray.length === 5){
+        alert('sorry!!!  you can not add more than five');
+        return;
+    }
+    olBody.appendChild(ol);
+    cartArray.push(playersName);
+   
 }
+
+
