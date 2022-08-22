@@ -40,7 +40,7 @@ function display(elementId){
 
 document.getElementById('calculate').addEventListener('click', function(){
     const parPlayerAmount = display('per-player');
-    if(isNaN(parPlayerAmount)){
+    if(isNaN(parPlayerAmount) || parPlayerAmount < 0){
         alert('please provid a valid number');
         return;
     }
@@ -60,7 +60,7 @@ document.getElementById('calculate-total').addEventListener('click', function(){
     const playerExpenses = parseFloat(parseFloat(playerExpensesString).toFixed(2))
     const totalAmount = managerAmount + coachAmount + playerExpenses;
     const totalAmountField = document.getElementById('total-amount');
-    if(isNaN(managerAmount) || isNaN(coachAmount) || isNaN(parPlayerAmount)){
+    if(isNaN(managerAmount) || isNaN(coachAmount) || managerAmount < 0 || coachAmount < 0){
         alert('please provid a valid number');
         return;
     }
