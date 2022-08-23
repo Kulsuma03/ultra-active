@@ -19,7 +19,8 @@ function addToCart(element){
     }
     element.setAttribute('disabled', true);
     element.classList.add('btn');
-    element.style.background = '#AEAEAE'
+    element.style.background = '#AEAEAE';
+    element.style.color = 'white'
     
     olBody.appendChild(ol);
     cartArray.push(playersName);
