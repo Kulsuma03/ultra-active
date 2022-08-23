@@ -18,6 +18,7 @@ function addToCart(element){
         return;
     }
     element.setAttribute('disabled', true);
+    element.classList.add('btn');
     olBody.appendChild(ol);
     cartArray.push(playersName);
     

@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 header{
     height: 450px;
+    background-image: linear-gradient(to right, #22153F , #97878F);
     
 }
 body{
     font-family: 'PT Serif', serif;
-    background: #EEEEE4;
+    background: #020F2A
 
+}
+.card-body-color{
+    background: #22153F;
+}
+.button{
+    background: #2D5E90;
 }
