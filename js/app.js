@@ -19,6 +19,8 @@ function addToCart(element){
     }
     element.setAttribute('disabled', true);
     element.classList.add('btn');
+    element.style.background = '#AEAEAE'
+    
     olBody.appendChild(ol);
     cartArray.push(playersName);
     
@@ -57,9 +59,12 @@ document.getElementById('calculate-total').addEventListener('click', function(){
 
     const managerAmount = display('manager-amount');
     const coachAmount = display('coach-amount');
+
     const playerExpensesString = document.getElementById('player-expenses').innerText;
     const playerExpenses = parseFloat(parseFloat(playerExpensesString).toFixed(2))
+    
     const totalAmount = managerAmount + coachAmount + playerExpenses;
+
     const totalAmountField = document.getElementById('total-amount');
     if(isNaN(managerAmount) || isNaN(coachAmount) || managerAmount < 0 || coachAmount < 0){
         alert('please provid a valid number');
